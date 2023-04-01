@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7671d15937.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="todoList.css"> 
+    <title>TODO LIST</title>
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <div class="header-buffer">
+                <div class="todo-button">Todo</div> <span class="todoCount">0</span>
+            </div>
+        </div>
+        <div class="todo-container">
+            <ul class="new-todos">
+            </ul>
+        </div>
+    </section>
+    <div class="add-new-task">
+        <button class="primary-button" id="add-new-task">Add New Task</button>
+    </div>
+    <form class="add-task" >
+        <div class="input-buffer"> 
+            <input type="text" placeholder="Task name here..." name="name" id="name" autocomplete="off" required>
+            <textarea name="desc" id="desc" cols="30" rows="3" placeholder="Description" required></textarea>
+        </div>
+        <div class="button-container">
+            <div class="button-buffer">
+                <input type="date" name="date" id="date" required>
+                <select name="assign" id="assign">
+                    <option value="John Doe">John Doe</option>
+                    <option value="Hugh Jass">Hugh Jass</option>
+                    <option value="Shaquille Oatmeal">Shaquille Oatmeal</option>
+                </select>
+            </div>
+            <div class="button-buffer"> 
+                <button class="primary-button" id="cancel">Cancel</button>
+                <button class="primary-button" id="add-task">Add Task</button>
+            </div>
+        </div>
+    </form>
+
+    
+    <script src="todoList.js" ></script>
+</body>
+</html>
